@@ -1,0 +1,137 @@
+.homeContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.Tag {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #263238;
+}
+.itemContainer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 30px;
+  flex-wrap: wrap;
+}
+.cardItem {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.imgDiv {
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgb(170, 168, 168);
+  border-radius: 50px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.cardItem span {
+  color: #37474f;
+  font-weight: 700;
+}
+.ProductContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.productItem {
+  width: 250px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 20px;
+}
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.productImg {
+  width: 200px;
+  height: 200px;
+  padding-bottom: 20px;
+}
+.logoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.productPrice {
+  font-size: 1rem;
+  font-weight: 700;
+  color: red;
+  margin-right: 10px;
+}
+.add {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  border: 2px solid red;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+.add span {
+  font-size: 1.5rem;
+  color: red;
+  font-weight: 600;
+  line-height: 20px;
+}
+.cover {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .itemContainer {
+    width: 100%;
+    margin: 0;
+  }
+  .cardItem {
+    width: 100%;
+    height: 200px;
+  }
+  .productItem {
+    width: 100%;
+  }
+}
